@@ -13,11 +13,13 @@
     <button id="SearchButtom" class="button">Search</button> </h1>
 
     <!-- TODO: replace with correct API(s) later -->
-    <label>optionally, select a source for the information.</label>
-    <select id="info-source" name="info-source">
-        <option value = "API1">API1</option>
-        <option value = "API2">API2</option>
-    </select>
+    <div class="select-API">
+      <label>optionally, select a source for the information.</label>
+      <select id="info-source" name="info-source">
+          <option value = "API1">API1</option>
+          <option value = "API2">API2</option>
+      </select>
+    </div>
 
     <p class="tagline">Your Song/Artist Info</p>
   </header>
@@ -42,7 +44,14 @@
         <ul>
           <li></li>
         </ul>
-      
+      </section>
+
+      <section id="lyrics-container">
+
+        <h2>Lyrics:</h2>
+
+        <label id="lyrics-text">Loading lyrics...</label>
+
       </section>
 
     </main>

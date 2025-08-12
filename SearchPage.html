@@ -11,6 +11,14 @@
   <header>
     <h1>Song/Artist:  <input type="text" id="SearchBar">
     <button id="SearchButtom" class="button">Search</button> </h1>
+
+    <!-- TODO: replace with correct API(s) later -->
+    <label>optionally, select a source for the information.</label>
+    <select id="info-source" name="info-source">
+        <option value = "API1">API1</option>
+        <option value = "API2">API2</option>
+    </select>
+
     <p class="tagline">Your Song/Artist Info</p>
   </header>
 
@@ -18,34 +26,27 @@
         
     </nav>
     <main class="container">
-        <section id="about">
+      <section id="about">
 
-      <h2>Artist</h2>
-      <ul>
-        <li></li>
-        
-      </ul>
+        <h2>Artist(s):</h2>
+        <ul id = "artists-lst">
+          <li></li>
+        </ul>
 
-      <h2>Songs Similar</h2>
-      <ul>
-        <li></li>
-        
-      </ul>
+        <h2>Songs Similar</h2>
+        <ul>
+          <li></li>
+        </ul>
 
-      <h2>Current Listeners</h2>
-      <ul>
-        <li></li>
-        
-      </ul>
+        <h2>Current Listeners</h2>
+        <ul>
+          <li></li>
+        </ul>
       
-    </section>
-
-    
-
+      </section>
 
     </main>
    
-
     <footer>
       <p>&copy; 2025 Pomp'n Beats. All rights reserved.</p>
     </footer>

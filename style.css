@@ -186,6 +186,22 @@ input[type="number"] {
     padding-left: 0;
 }
 
+.select-API{
+    margin: 15px;
+
+    font-size: small;
+    color: var(--color-accent);
+}
+
+#info-source{
+    margin-left: 10px;    
+
+    color: var(--text-primary);
+    background-color: var(--color-accent);
+    
+    border-radius: 1rem;
+}
+
 #history li {
     color: var(--text-primary);
     padding: 0.25rem;

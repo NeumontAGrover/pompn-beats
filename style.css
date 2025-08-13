@@ -219,6 +219,11 @@ input[type="number"] {
 }
 
 .select-API{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
     margin: 15px;
 
     font-size: small;
@@ -226,6 +231,7 @@ input[type="number"] {
 }
 
 #info-source{
+
     margin-left: 10px;    
 
     color: var(--text-primary);
@@ -244,6 +250,45 @@ input[type="number"] {
     margin-top: 1rem;
     max-width: 300px;
     border-radius: 8px;
+}
+
+#lyrics-container{
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 1rem;
+    margin: .5rem;
+
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+
+}
+
+#lyrics-container #lyrics-header{
+    font-size: 35px;
+    font-style: italic;
+    padding: 1rem;
+}
+
+/* this requeres us to make every newline a <br> (and every space a <br><br>
+    otherwise, this works perfectly well in my opinion */
+#lyrics-container #lyrics-text{
+
+    width: 90%;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background-color: var(--color-accent);
+
+    border-radius: 8px;
+
 }
 
 footer {

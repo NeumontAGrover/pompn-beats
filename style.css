@@ -1,17 +1,18 @@
 :root {
     --bg-primary: #272424;
-    --bg-secondary: #3a3232;
-    --text-primary: #f5f5f5;
-    --color-primary: #ffd700; 
-    --color-accent: #645500;  
+    --bg-secondary: #3a3a3a;
+    --text-primary: white;
+    --text-secondary: rgb(153, 71, 212);
+    --color-primary: #a730ad; 
+    --color-accent: #a730ad;
     --color-muted: #888888;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background-color: var(--bg-primary);
-    background-image: url('dark-bg-texture.jpg');
+    font-family: 'Impact', Fantasy;
+    background-color: rgb(71, 70, 70);
+    
     background-size: cover;
     background-attachment: fixed;
     color: var(--text-primary);
@@ -20,12 +21,12 @@ body {
 }
 
 header {
-    background-color: var(--color-primary);
-    color: var(--text-primary);
+    background-color: rgba(44, 41, 41, 0.9);
+    color: var(--color-primary);
     padding: 3rem 2rem;
     box-shadow: var(--shadow);
     text-align: center;
-    border-bottom: 4px solid var(--color-accent);
+    border-bottom: 4px solid var(--color-primary);
 }
 
 header h1 {
@@ -39,9 +40,15 @@ header h1 {
     gap: 5px;
 
 
+
+}
+
+.header-title{
+    flex: 1;
 }
 
 .search-input{
+    display:flex;
     width: 300px;
     padding: 10px;
     border: 2px solid #a730ad;
@@ -52,6 +59,7 @@ header h1 {
 }
 
 .search-button{
+    display: flex;
     padding: 10px 20px;
     background-color: #913b9c;
     color: white;
@@ -66,7 +74,7 @@ header h1 {
 
 .tagline {
     font-style: italic;
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
@@ -86,9 +94,6 @@ header h1 {
     z-index: 1000;
 }
 
-.theme-toggle:hover {
-    background: #ffec80;
-}
 
 nav ul {
     display: flex;
@@ -115,7 +120,7 @@ nav a:hover {
 main {
     width: 95%;
     margin: auto;
-    background-color: rgba(31, 31, 31, 0.9);
+    background-color: rgba(49, 49, 49, 0.922);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -127,11 +132,12 @@ main {
 }
 
 #about {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     padding: 1.5rem;
     border-left: 5px solid var(--color-primary);
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .about-text p {
@@ -168,20 +174,20 @@ details {
 }
 
 details summary {
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
-    color: var(--color-accent);
+    color: var(--text-secondary);
 }
 
 h2, h3 {
-    color: var(--color-accent);
+    color: var(--text-secondary);
 }
 
 input[type="number"] {
     padding: 0.75rem;
     font-size: 1.1rem;
     width: 60%;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--bg-primary);
     border-radius: 6px;
     background-color: var(--bg-secondary);
     color: var(--text-primary);
@@ -192,7 +198,7 @@ input[type="number"] {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.6rem 1.2rem;
-    background-color: var(--color-primary);
+    background-color: var(--bg-primary);
     color: var(--text-primary);
     font-weight: bold;
     border: none;
@@ -218,22 +224,6 @@ input[type="number"] {
     padding-left: 0;
 }
 
-.select-API{
-    margin: 15px;
-
-    font-size: small;
-    color: var(--color-accent);
-}
-
-#info-source{
-    margin-left: 10px;    
-
-    color: var(--text-primary);
-    background-color: var(--color-accent);
-    
-    border-radius: 1rem;
-}
-
 #history li {
     color: var(--text-primary);
     padding: 0.25rem;
@@ -249,9 +239,8 @@ input[type="number"] {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--color-primary);
-    color: var(--text-primary);
-    border-top: 4px solid var(--color-accent);
+    background-color: rgba(31, 31, 31, 0.9);
+    color: var(--color-primary);
+    border-top: 4px solid var(--color-primary);
     margin-top: 2rem;
-
 }

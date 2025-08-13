@@ -19,8 +19,12 @@
                <h2>To get started Type in the song or artist to listen to.</h2>
 
         
-            <input type="text" id="SearchBar">
-            <button onclick="window.location.href='SearchPage.html'">Search</button>
+             <div class="header-flex">
+                <input type="text" id="SearchBarSong" list="suggestions" placeholder="Search for Artist" class="search-input">
+                <button onclick="window.location.href='SearchPage.html'" class="search-button">Song</button>
+                <input type="text" id="SearchBarArtist" list="suggestions" placeholder="Search for Artist" class="search-input">
+                <button onclick="window.location.href='SearchPage.html'" class="search-button">Artist</button>
+            </div>
         </header>
     
         <div class="Banner">
@@ -31,17 +35,10 @@
             </div>
 
 
-
-    <main>
-
-      
-
-       
-
-    </main>
+        <div class="footer-flex">
+            <footer>
+                <p>&copy; 2025 Pomp'n Beats. All rights reserved.</p>
+            </footer>
+        </div>
      </body>
-        <footer>
-            <p>&copy; 2023 Pomp'n Beats. All rights reserved.</p>
-        </footer>
-
 </html>

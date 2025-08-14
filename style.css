@@ -66,6 +66,18 @@ header h1 {
     background-color: #a730ad;
 }
 
+.prev-search-container{
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.prev-searches{
+    width: fit-content;
+    height: fit-content;
+
+    font-size: small;
+}
 
 .tagline {
     font-style: italic;
@@ -217,6 +229,28 @@ input[type="number"] {
     margin-top: 1rem;
     list-style: none;
     padding-left: 0;
+}
+
+.select-API{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin: 15px;
+
+    font-size: small;
+    color: var(--color-muted);
+}
+
+#info-source{
+
+    margin-left: 10px;    
+
+    color: var(--text-primary);
+    background-color: var(--color-accent);
+    
+    border-radius: 1rem;
 }
 
 #history li {

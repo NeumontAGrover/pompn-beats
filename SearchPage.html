@@ -3,68 +3,82 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Song Info</title>
+  <title>Your Song:</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
   <header>
-    <h1>Song/Artist:  <input type="text" id="SearchBar">
-    <button id="SearchButtom" class="button">Search</button> </h1>
-     <nav>
-                <ul>
-                    <li><a href="BeatsFrontpage.html">Home</a></li>
-                    <li><a href="AboutPage.html">About</a></li>
-                </ul>
-            </nav>
+    <div class="header-flex">
+      <h1 class="header-title">Song/Artist:  </h1>
+      <input type="text" id="SearchBarSong" list="suggestions" placeholder="Search for Song" class="search-input">
+      <button onclick="window.location.href='SearchPage.html'" class="search-button">Song</button>
+      <input type="text" id="SearchBarArtist" list="suggestions" placeholder="Search for Artist" class="search-input">
+      <button onclick="window.location.href='SearchPage.html'" class="search-button">Artist</button>            
+    </div>
+  
+    <p class="tagline">Your Song/Artist Info</p>
 
-    <!-- TODO: replace with correct API(s) later -->
-    <div class="select-API">
+     <div class="select-API">
       <label>optionally, select a source for the information.</label>
       <select id="info-source" name="info-source">
           <option value = "API1">API1</option>
           <option value = "API2">API2</option>
       </select>
     </div>
-
-    <p class="tagline">Your Song/Artist Info</p>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="BeatsFrontpage.html">Home</a></li>
+      
+    </ul>
+  </nav>
 
     <nav>
         
     </nav>
     <main class="container">
-      <section id="about">
+        <section id="about">
 
-        <h2>Artist(s):</h2>
-        <ul id = "artists-lst">
-          <li></li>
-        </ul>
+      <h2>Artist(s)</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil explicabo voluptates cupiditate, voluptatum hic, expedita molestiae voluptatem incidunt veniam quisquam repellendus omnis magni ducimus itaque consequuntur placeat perspiciatis assumenda?</li>
+        
+      </ul>
 
-        <h2>Songs Similar</h2>
-        <ul>
-          <li></li>
-        </ul>
+      <h2>Similar</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni, voluptate asperiores optio mollitia temporibus. Quaerat nisi ipsam, repellendus repellat inventore ullam fugiat accusantium debitis, corrupti, commodi ratione quas vero.</li>
+        
+      </ul>
 
-        <h2>Current Listeners</h2>
-        <ul>
-          <li></li>
-        </ul>
-      </section>
+      <h2>Current Listeners</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, repellat. Amet vel itaque a in ducimus laudantium dignissimos autem aspernatur veniam, illo quo harum maiores error minus quam earum molestiae?</li>
+        
+      </ul>
+      
+    </section>
 
-      <section id="lyrics-container">
+    <section id="lyrics-container">
 
         <label id="lyrics-header">Lyrics:</label>
 
         <label id="lyrics-text">Loading Lyrics...</label>
 
       </section>
+    
+
 
     </main>
    
-    <footer>
-      <p>&copy; 2025 Pomp'n Beats. All rights reserved.</p>
-    </footer>
+
+    <div class="footer-flex">
+      <footer>
+        <p>&copy; 2025 Pomp'n Beats. All rights reserved.</p>
+      </footer>
+    </div>
+   
 </body>
 </html>

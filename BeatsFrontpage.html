@@ -6,17 +6,74 @@
         <title>Pomp'n beats!</title>
         <link rel="stylesheet" href="style.css" />
     </head>
+    <body>
+        <header>
+              <h1> Welcome to Pomp'n Beats!</h1>
+          
+            <nav>
+                <ul>
+                    <li><a href="SearchPage.html">Search</a></li>
+                    <li><a href="AboutPage.html">About</a></li>
+                </ul>
+            </nav>
+               <h2>To get started Type in the song or artist to listen to.</h2>
 
-    <main>
+            <div class="header-flex">
+                <input type="text" id="SearchBarSong" list="suggestions" placeholder="Search for Song" class="search-input">
+                <button onclick="window.location.href='SearchPage.html'" class="search-button">Song</button>
+                <input type="text" id="SearchBarArtist" list="suggestions" placeholder="Search for Artist" class="search-input">
+                <button onclick="window.location.href='SearchPage.html'" class="search-button">Artist</button>
 
-        <h1> Welcome to Pomp'n Beats!</h1>
-        <h2>To get started Type in the song or artist to listen to.</h2>
-        
-        <body>
-            <input type="text" id="SearchBar">
-            <button onclick="window.location.href='SearchPage.html'">Search</button>
-        </body>
+            
+            </div>
+            
+        </header>
+                    <img src="" alt="artist banner" />
+            <div class="hero-text">
+                <h2>Discover Your Next Favorite Song</h2>
 
-    </main>
+        <main>
+           <div class="Discover box">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Top Songs</th>
+                            <th>Top Artist</th>
+                            <th>Top Albums</th>
+                            <th>Top Genres</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- More songs can be added here -->
+                    </tbody> 
+                </table>
+
+
+
+            </section>        
+                
+            <section>
+                <h2>Latest Hits</h2>
+                <ul>
+                    <li>Song 1</li>
+                    <li>Song 2</li>
+                    <li>Song 3</li>
+                    <li>Song 4</li>
+                </ul>
+
+
+        <div class="footer-flex">
+            <footer>
+            <p>&copy; 2025 Pomp'n Beats. All rights reserved.</p>
+            </footer>
+        </div>
+   
+     </body>
+     
 
 </html>

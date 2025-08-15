@@ -3,14 +3,48 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Song:</title>
+  <title>Song Info</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
 <body>
   <header>
-    <h1>Song/Artist:  <input type="text" id="SearchBar">
-    <button id="SearchButtom" class="button">Search</button> </h1>
+    <div class="search-container">
+
+
+    </div>
+
+   
+
+
+     <nav>
+                <ul>
+                    <li><a href="BeatsFrontpage.html">Home</a></li>
+                    <li><a href="AboutPage.html">About</a></li>
+                </ul>
+            </nav>
+    <div class="header-flex">
+      <h1 class="header-title">Song/Artist:  </h1>
+      <input type="text" id="SearchBarSong" list="suggestions" placeholder="Search for Song" class="search-input">
+      <button onclick="window.location.href='SearchPage.html'" class="search-button">Song</button>
+   
+      <input type="text" id="SearchBarArtist" list="suggestions" placeholder="Search for Artist" class="search-input">
+      <button onclick="window.location.href='SearchPage.html'" class="search-button">Artist</button>        
+    </div>
+        <div class="prev-search-container">
+      <details class="prev-searches">
+        <summary>Previous Searches</summary>
+        
+        <!-- insert previous searches into here -->
+        <ul id="prev-search-lst">
+        </ul>
+
+      </details>
+    </div>
+
+  
+    <p class="tagline">Your Song/Artist Info</p>
 
     <!-- TODO: replace with correct API(s) later -->
     <div class="select-API">
@@ -21,7 +55,7 @@
       </select>
     </div>
 
-    <p class="tagline">Your Song/Artist Info</p>
+  
   </header>
 
     <nav>
@@ -48,9 +82,9 @@
 
       <section id="lyrics-container">
 
-        <h2>Lyrics:</h2>
+        <label id="lyrics-header">Lyrics:</label>
 
-        <label id="lyrics-text">Loading lyrics...</label>
+        <label id="lyrics-text">Loading Lyrics...</label>
 
       </section>
 
